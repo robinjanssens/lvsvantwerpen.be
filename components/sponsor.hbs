@@ -1,0 +1,15 @@
+<div class="col-lg-{{width}} text-center">
+    <div class="service-box">
+        {{#if url}}
+            <a href="{{url}}" target="_blank">
+        {{/if}}
+            {{#if image}}
+                <img src="{{image}}" alt="{{name}}" style="width:100%;">
+            {{else}}
+                <h1>{{name}}</h1>
+            {{/if}}
+        {{#if url}}
+            </a>
+        {{/if}}
+    </div>
+</div>

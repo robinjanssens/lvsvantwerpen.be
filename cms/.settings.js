@@ -1,8 +1,8 @@
 {
 	settings: {
 		$admin_background_image_type: 'image',
-		admin_background_image: '/admin/assets/img/pattern.png',
+		admin_background_image: '/remote/direct_uploads/1498600791_wood.jpg',
 		dark: true,
-		login_message: '',
+		login_message: ''
 	}
 }

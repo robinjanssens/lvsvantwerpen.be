@@ -1,15 +1,162 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>enduro.js page</title>
-		<link rel="stylesheet" href="/assets/css/main.css">
-		<style type="text/css"></style>
-	</head>
-	<body>
-		<p>Hey {{greeting}}</p>
-		<p>Enduro is {{superlative}}</p>
-		{{>end}}
-	</body>
+<html lang="nl">
 
-	{{!-- <script data-main="/assets/js/main.js" src="/assets/vendor/requirejs/require.js"></script> --}}
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="LVSV Antwerpen">
+    <meta name="author" content="LVSV Antwerpen">
+
+    <title>LVSV Antwerpen</title>
+
+    {{>style}}
+
+</head>
+
+<body id="page-top">
+
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">LVSV Antwerpen</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#evenementen">Evenementen</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#sponsors">Sponsors</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#lidworden">Lid worden</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="bestuur">Bestuur</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="headerimage" style="background-image: url('{{header_image}}');"></div>
+    <header>
+        <div class="header-content unblur">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">{{cover_title}}</h1>
+                <hr class="light">
+                <h2 id="homeHeading">{{cover_subtitle}}</h2>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">{{about_title}}</h2>
+                    <hr class="light">
+                    <p class="text-faded">{{about_text}}</p>
+                    <a href="geschiedenis" class="page-scroll btn btn-default btn-xl sr-button">{{history_button_text}} &raquo;</a>
+                    <a href="bestuur" class="page-scroll btn btn-default btn-xl sr-button">{{board_members_button_text}} &raquo;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="whitebackground" id="evenementen">
+    <div class="col-lg-12 text-center">
+        <h2 class="section-heading">{{events_title}}</h2>
+        <hr class="primary">
+    </div>
+
+    <div class="no-padding">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+
+                {{#each events}}
+                    {{>event}}
+                {{else}}
+                    <div class="col-lg-12 text-center">
+                        <h3>Geen evenementen gepland</h3>
+                    </div>
+                {{/each}}
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<aside class="bg-dark">
+    <div class="container text-center">
+        <div class="call-to-action">
+            <h2>{{facebook_events_title}}</h2>
+            <hr class="light">
+            <p class="text-faded">{{facebook_events_text}}</p>
+            <a href="{{facebook_events_url}}" target="_blank" class="btn btn-default btn-xl sr-button">{{facebook_events_button_text}} &raquo;</a>
+        </div>
+    </div>
+</aside>
+
+<section id="sponsors" class="whitebackground">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">{{sponsors_title}}</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            {{#each sponsors}}
+                {{>sponsor}}
+            {{/each}}
+
+            <div class="col-lg-12 col-md-12 text-center">
+                <div class="service-box">
+                    <a href="ereleden" class="page-scroll btn btn-default btn-primary btn-xl sr-button">{{ereleden_button_text}} &raquo;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-primary" id="lidworden">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">{{membership_title}}</h2>
+                <hr class="light">
+                <p class="text-faded">{{membership_text}}<a href="mailto:{{membership_email}}" class="light">{{membership_email}}</a>{{membership_text2}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{>social}}
+
+{{>scripts}}
+
+</body>
+
 </html>

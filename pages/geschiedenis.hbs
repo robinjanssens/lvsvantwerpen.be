@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="LVSV Antwerpen">
+    <meta name="author" content="LVSV Antwerpen">
+
+    <title>Geschiedenis | LVSV Antwerpen</title>
+
+    {{>style}}
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">&lsaquo; LVSV Antwerpen</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#geschiedenis">Geschiedenis</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#statuten">Statuten</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#oudpraesidia">Oud Praesidia</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="headerimage" style="background-image: url('{{header_image}}');"></div>
+    <header>
+        <div class="header-content unblur">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">{{cover_title}}</h1>
+                <hr class="light">
+                <h2 id="homeHeading">{{cover_subtitle}}</h2>
+                <div style="height:64px;"></div>  <!--spacing-->
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 text-center">
+                        <div class="service-box">
+                            <img src="assets/img/oudschild.png" alt="Oud Schild" class="schild">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 text-center">
+                        <div class="service-box">
+                            <img src="assets/img/nieuwschild.png" alt="Nieuw Schild" class="schild">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="geschiedenis" class="whitebackground">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{history_title}}</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            {{#each history_text}}
+                <p>{{this}}</p>
+            {{/each}}
+        </div>
+    </section>
+
+    <section id="statuten" class="whitebackground">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{statuten_title}}</h2>
+                    <hr class="primary">
+                    <a href="{{statuten}}" target="_blank" class="btn btn-default btn-xl sr-button">{{statuten_button_text}} &raquo;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary" id="oudpraesidia">
+      <div class="container text-center">
+        <h1>{{board_history_title}}</h1>
+        <hr class="light">
+
+        <h3>1947-1948</h3>
+        <ul>
+          <li>Voorzitter: Emiel Janssens</li>
+          <li>Ondervoorzitter E. Meerts</li>
+          <li>Ondervoorzitter E. Eeckels</li>
+          <li>Secretaris: Mariette Delhalle</li>
+          <li>Persdienst: Karel Cremers</li>
+          <li>Schatbewaarder Sylvia Steynen</li>
+        </ul>
+
+        <h3>1948-1949</h3>
+        <ul>
+          <li>Voorzitter: Emiel Janssens</li>
+          <li>Ondervoorzitter Paul Van Haren</li>
+          <li>Ondervoorzitter Karel Cremers</li>
+          <li>Kultuurleider: Georges Denys</li>
+          <li>Perswaarnemer: Roland Wyckmans</li>
+          <li>Schatbewaarder Sylvia Steynen</li>
+          <li>Raadslid: Betty Van der Raeydt</li>
+          <li>Raadslid: Impens</li>
+          <li>Raadslid: Hugo Uyterhoeven</li>
+        </ul>
+
+        <h3>1949-1950</h3>
+        <ul>
+          <li>Voorzitter: Paul Van Haren</li>
+          <li>Ondervoorzitter Herman Singeleijn</li>
+          <li>Ondervoorzitter Karel Creemers</li>
+          <li>Secretaris: Raymond Geerstens</li>
+          <li>Redacteur: Gilbert Van de Velde</li>
+          <li>Schatbewaarder Hugo Uyterhoeven</li>
+          <li>Raadslid: Betty Van der Raeydt</li>
+          <li>Raadslid: Marcel Saeys</li>
+        </ul>
+
+        <h3>1950-1951</h3>
+        <ul>
+          <li>Voorzitter: Paul Van Haren</li>
+          <li>Ondervoorzitter Yvan Van Overbeke</li>
+          <li>Ondervoorzitter Paul Slabbaert</li>
+          <li>Secretaris: Raymond Geertsen</li>
+          <li>Schatbewaarder Adolf Dumont</li>
+          <li>Redacteur: Gustaaf Van Praet</li>
+          <li>Raadslid: Victor De Meyer</li>
+          <li>Raadslid: Martens</li>
+          <li>Raadslid: Emiel de Meyer</li>
+        </ul>
+
+        <h3>1951-1952</h3>
+        <ul>
+          <li>Voorzitter: Gerard Rombouts</li>
+          <li>Ondervoorzitter Robert Coppenrath</li>
+          <li>Secretaris: Gustaaf Van Praet</li>
+          <li>Schatbewaarder J. De Groof</li>
+          <li>Raadslid: Theirry Boen</li>
+          <li>Raadslid: J. Daniel</li>
+          <li>Raadslid: Victor De Meyer</li>
+          <li>Raadslid: Adolf Dumont</li>
+          <li>Raadslid: Paul Van Haren</li>
+        </ul>
+
+        <h3>1952-1953</h3>
+        <ul>
+          <li>Voorzitter: Robert Coppenrath</li>
+          <li>Ondervoorzitter Gerard Rombouts</li>
+          <li>Ondervoorzitter Walter Bague</li>
+          <li>Secretaris: Theirry Boen</li>
+          <li>Raadslid: E. Van Lommel</li>
+          <li>Raadslid: Johan Dekker</li>
+          <li>Raadslid: Antoon Reudinck</li>
+        </ul>
+
+        <h3>1953-1954</h3>
+        <ul>
+          <li>Voorzitter: Robert Coppenrath</li>
+          <li>Verdere informatie ontbreekt</li>
+        </ul>
+
+        <h3>1954-1955</h3>
+        <ul>
+          <li>Voorzitter: Johan Dekker</li>
+          <li>Past president: Robert Coppenrath</li>
+          <li>Secretaris: Thierry Boen</li>
+          <li>Hulpsecretaris: Billy Coosemans</li>
+          <li>Penningmeester: Antoon Reudink</li>
+          <li>Raadslid: Hubert Bell</li>
+          <li>Raadslid: Willy Simon</li>
+          <li>Raadslid: Jan Jansens</li>
+          <li>Raadslid: Raymond Lahaye</li>
+        </ul>
+
+        <h3>1955-1956</h3>
+        <ul>
+          <li>Voorzitter: Willy Simon</li>
+          <li>Verdere informatie ontbreekt</li>
+        </ul>
+
+        <h3>1956-1959</h3>
+        <ul>
+          <li>Informatie ontbreekt</li>
+        </ul>
+
+        <h3>1960-1961</h3>
+        <ul>
+          <li>Voorzitter: Robert Verschoten</li>
+          <li>Ondervoorzitter Raoul van de Parre</li>
+          <li>Secretaris: Monique Cattaruza</li>
+          <li>Archivaris: André V.D. Bossche</li>
+          <li>Penningmeester: Carla Van Oosten</li>
+          <li>Bestuurslid: Paul Decock</li>
+          <li>Bestuurslid: Yvonnes Peynenborg</li>
+          <li>Bestuurslid: Johan Rutten</li>
+          <li>Bestuurslid: Robert van Molle</li>
+        </ul>
+
+        <h3>1961-1962</h3>
+        <ul>
+          <li>Voorzitter: Jos Janssens</li>
+          <li>Verdere informatie ontbreekt</li>
+        </ul>
+
+        <h3>1962-1963</h3>
+        <ul>
+          <li>Voorzitter: Jos Janssens</li>
+          <li>Ondervoorzitter Robert van Molle</li>
+          <li>Ondervoorzitter Gerrit Lovink</li>
+          <li>Secretaris: Carla Van Oosten</li>
+          <li>Penningmeester: André V.D. Bossche</li>
+        </ul>
+
+        <h3>1963-1964</h3>
+        <ul>
+          <li>Voorzitter: Robert Van de Roye</li>
+          <li>Ondervoorzitter Charles Van Houdt</li>
+          <li>Ondervoorzitter Paul Jaspers</li>
+          <li>Secretaris: Marc Rosiers</li>
+          <li>Politiek secretaris: Freddy Kint</li>
+          <li>Penningmeester: André V.D. Bossche</li>
+        </ul>
+
+        <h3>1964-1965</h3>
+        <ul>
+          <li>Voorzitter: Robert Van de Roye</li>
+          <li>Ondervoorzitter Frank Boesmans</li>
+          <li>Secretaris: Marc Van Tendeloo</li>
+          <li>Penningmeester: Marc Rosiers</li>
+        </ul>
+
+        <h3>1966-1967</h3>
+        <ul>
+          <li>Voorzitter: Marc Van Tendeloo</li>
+          <li>Ondervoorzitter Leo Steculorum</li>
+          <li>Secretaris: Jacques De Dieu</li>
+          <li>Penningmeester: René Geybels</li>
+          <li>PR: Christiane Verloo</li>
+          <li>Raadslid: Jean-Marie Dubosch</li>
+        </ul>
+
+        <h3>1967-1968</h3>
+        <ul>
+          <li>Voorzitter: Marc Van Tendeloo</li>
+          <li>Verdere informatie ontbreekt</li>
+        </ul>
+
+        <h3>1968-1969</h3>
+        <ul>
+          <li>Voorzitter: Jacques De Dieu</li>
+          <li>Past president: Marc Van Tendeloo</li>
+          <li>Ondervoorzitter Freddy Mattyn</li>
+          <li>Secretaris: Paul Mortelmans</li>
+          <li>Hulpsecretaris: Eric Meersman</li>
+          <li>Penningmeester: Francis Pasmans</li>
+          <li>Raadslid: Paul Jannsens</li>
+          <li>Raadslid: Gilbert van Gilbergen</li>
+          <li>Raadslid: Frank Vanden Branden</li>
+        </ul>
+
+        <h3>1969-1970</h3>
+        <ul>
+          <li>Voorzitter: Gilbert van Gilbergen</li>
+          <li>Ondervoorzitter Paul Jacobs</li>
+        </ul>
+
+        <h3>1970-1971</h3>
+        <ul>
+          <li>Voorzitter: Paul Jacobs</li>
+          <li>Pro-Preses Gilbert Van Gilbergen</li>
+          <li>BLSV: Klep Jaap</li>
+          <li>Secretaris: Erik Dralans</li>
+          <li>Pers: Michel Janssens</li>
+          <li>Penningmeester: Daniëlle Ramakers</li>
+          <li>Raadslid: Francis Pasmans</li>
+          <li>Raadslid: Liliane Deschamps</li>
+        </ul>
+
+        <h3>1971-1972</h3>
+        <ul>
+          <li>Voorzitter: Liliane Deschamps</li>
+          <li>Ondervoorzitter Jean-Paul Vermeire</li>
+          <li>Secretaris: Andrée Ruts</li>
+          <li>Penningmeester: Daniëlle Ramakers</li>
+          <li>Politiek Secretaris: Greta De Bode</li>
+          <li>Pers: Bert Mathe</li>
+          <li>Raadlid: Denise Cleiren</li>
+          <li>Raadslid: Monique Leys</li>
+          <li>Raadslid: Hedwig Despiegelaere</li>
+          <li>Raadslid: Didier De Langhe</li>
+          <li>Raadslid: Lily Mondelaers</li>
+          <li>Raadslid: Paul Jacobs</li>
+        </ul>
+
+        <h3>1972-1973</h3>
+        <ul>
+          <li>Geen werking</li>
+        </ul>
+
+        <h3>1973-1974</h3>
+        <ul>
+          <li>Eventueel bestuur:</li>
+          <li>Voorzitter: Raymind Thys</li>
+          <li>Secretaris: P. Welvaert</li>
+          <li>Penningmeester: J. Dens</li>
+        </ul>
+
+        <h3>1977-1978</h3>
+        <ul>
+          <li>Voorzitter: Koen Dassen</li>
+          <li>Ondervoorzitter Gerrie Kinsbergen</li>
+          <li>Secretaris: Wim De Bruyn</li>
+          <li>Penningmeester: Bob Koevoets</li>
+          <li>Feestleider: Frans Van Loo</li>
+          <li>Redacteur: Marc De Graeve</li>
+          <li>Raadslid: Patrick Boelens</li>
+          <li>Raadslid: Luc Broos</li>
+          <li>Raadslid: Anne-Marie Larose</li>
+          <li>Raadslid: Jan Michel</li>
+          <li>Raadslid: Martin Michel</li>
+          <li>Raadslid: Jan De Clerck</li>
+        </ul>
+
+        <h3>1978-1979</h3>
+        <ul>
+          <li>Voorzitter: Jan Van Kerckhoven</li>
+          <li>Ondervoorzitter Paul Gréant</li>
+          <li>Secretaris: Desiree Oen</li>
+          <li>Politiek Secretaris: Jean-Pierre Corremans</li>
+          <li>Penningmeester Mimi Mus</li>
+          <li>Feestleider: Frans Van Loo</li>
+          <li>Raadslid: Koen Dassen</li>
+          <li>Raadslid: Wim De Bruyn</li>
+        </ul>
+
+        <h3>1979-1980</h3>
+        <ul>
+          <li>Voorzitter: Jan Van Kerckhoven</li>
+          <li>Secretaris: Clotaire Gijsel</li>
+          <li>Redacteur: Ronny Plaeke</li>
+        </ul>
+
+        <h3>1980-1981</h3>
+        <ul>
+          <li>Voorzitter: Jan Van Kerckhoven</li>
+          <li>Ondervoorzitter Mimi Mus</li>
+          <li>Secretaris: Jan Schiltz</li>
+          <li>Penningmeester: Guy Thienpont</li>
+          <li>Feestleider: Leo Verthongen</li>
+          <li>Politiek Secretaris: Patrick Huybrechts</li>
+          <li>Politiek Secretaris: Patrick Schools</li>
+          <li>Cantor: Frans Van Loo</li>
+          <li>Raadslid: Jean-Pierre Correm</li>
+        </ul>
+
+        <h3>1981-1982</h3>
+        <ul>
+          <li>Voorzitter: Guy Thienpont</li>
+          <li>Ondervoorzitter Manou Martin</li>
+        </ul>
+
+        <h3>1982-1983</h3>
+        <ul>
+          <li>Voorzitter Frank de Dyn</li>
+        </ul>
+
+        <h3>1983-1984</h3>
+        <ul>
+          <li>Niet bekend</li>
+        </ul>
+
+        <h3>1985-1986</h3>
+        <ul>
+          <li>UFSIA</li>
+          <li>Voorzitter: Michel De Bolle</li>
+          <li>Ondervoorzitter Bart Jacobs</li>
+          <li>RUCA</li>
+          <li>Voorzitter: Kenneth Saké</li>
+        </ul>
+
+        <h3>1986-1987</h3>
+        <ul>
+          <li>UFSIA:</li>
+          <li>Voorzitter: Ludo Van Campenhout</li>
+          <li>UIA</li>
+          <li>Voorzitter: Koen Boffen</li>
+        </ul>
+
+        <h3>1987-1988</h3>
+        <ul>
+        UFSIA
+          <li>Voorzitter: Ludo Van Campenhout</li>
+          <li>RUCA</li>
+          <li>Voorzitter: Kenneth Saké</li>
+          <li>UIA</li>
+          <li>Voorzitter: Koen Boffen</li>
+        </ul>
+
+        <h3>1988-1989</h3>
+        <ul>
+          <li>UFSIA</li>
+          <li>Voorzitter: Ludo Van Campenhout</li>
+        </ul>
+
+        <h3>1990-1991</h3>
+        <ul>
+          <li>Voorzitter: Bart Van Borm</li>
+          <li>UFSIA</li>
+          <li>Voorzitter: Marc Levrie</li>
+          <li>Ondervoorzitter Gunther Peeters</li>
+          <li>Secretaris: Johan Stoelen</li>
+          <li>Penningmeester: Daniëlle Dockx</li>
+          <li>Hoofdredacteur: Bart De Wever</li>
+          <li>HSA</li>
+          <li>Voorzitter Serge Godts</li>
+        </ul>
+
+        <h3>1991-1992</h3>
+        <ul>
+          <li>Voorzitter: Marc Levrie</li>
+          <li>UFSIA</li>
+          <li>Voorzitter: Johan Stoelen</li>
+          <li>Ondervoorzitter Gunther Peeters</li>
+          <li>Secretaris: Elke Willaert</li>
+          <li>Penningmeester: Geert Liekens</li>
+          <li>Feestleider: Tom Eyckmans</li>
+          <li>Redacteur: Daniëlle Dockx</li>
+          <li>Public Relations: Curt De Laet</li>
+          <li>Raadslid Frederik Callebaut</li>
+          <li>Raadslid: Peter Huybrechts</li>
+          <li>RUCA</li>
+          <li>Voorzitter: Mark Staeljanssens</li>
+        </ul>
+
+        <h3>1992-1993</h3>
+        <ul>
+          <li>Voorzitter: Dvid Winkels</li>
+          <li>UFSIA</li>
+          <li>Voorzitter: Geert Liekens</li>
+        </ul>
+
+        <h3>1993-1994</h3>
+        <ul>
+          <li>UFSIA</li>
+          <li>Voorzitter: Tom Eyckmans</li>
+          <li>Ondervoorzitter Dirk Putzeys</li>
+          <li>Raadslid: Olaf Geleyn</li>
+        </ul>
+
+        <h3>1994-1995</h3>
+        <ul>
+          <li>Voorzitter: Olaf Geleyn</li>
+          <li>Ondervoorzitter Michaël De Clercq</li>
+          <li>Secretaris: Marijke De Roost</li>
+          <li>Penningmeester: Stefan Geets</li>
+          <li>Feestleider: Steven Verhoeven</li>
+          <li>Public Relations: Geert Drieskens</li>
+          <li>Raadslid: Steven De Caluwé</li>
+          <li>Raadslid: Steven Vander Smissen</li>
+        </ul>
+
+        <h3>2001-2002</h3>
+        <ul>
+          <li>Voorzitter: Xerxes De Belder</li>
+          <li>Politiek Secretaris: Dewi Van de Vyver</li>
+          <li>Penningmeester: Wouter Vandecappele</li>
+          <li>Redacteur: Kathleen Heylen</li>
+          <li>Webmaster: Frederik Smets</li>
+          <li>Raadslid: Koen Saisnez</li>
+          <li>Raadslid: Elke Lenaerts</li>
+          <li>Raadslid: Louis Saey</li>
+        </ul>
+
+        <h3>2002-2003</h3>
+        <ul>
+          <li>Voorzitter: Frederik Smets</li>
+        </ul>
+
+        <h3>2003-2004</h3>
+        <ul>
+          <li>Voorzitter: Gilles Vanderstuyft</li>
+          <li>Ondervoorzitter Frederik Smets</li>
+          <li>Secretaris: Filip Buntinx</li>
+          <li>Penningmeester: Tom Peeters</li>
+          <li>Webmaster: Xerxes De Belder</li>
+          <li>Public Relations: Stefanie Melis</li>
+        </ul>
+
+        <h3>2004-2005</h3>
+        <ul>
+          <li>Voorzitter: Filip Buntinx</li>
+        </ul>
+
+        <h3>2005-2006</h3>
+        <ul>
+          <li>Voorzitter: Edwin Verberght</li>
+          <li>Praetor: Dries Verbraeken</li>
+          <li>Secretaris: Werner Vandenbruwaene</li>
+          <li>Redacteur: David Vandersnickt</li>
+          <li>Cultuur: Deborah Smet</li>
+          <li>Feestleider: Nicolas Engelmann</li>
+          <li>Penningmeester: Tom Renckens</li>
+          <li>Aedilis: Frederik Vens</li>
+          <li>Public Relations: Tinne Van Ham</li>
+          <li>Cantor: Robert Van den Abbeele</li>
+          <li>Raadslid: Erwan Bertrand</li>
+        </ul>
+
+        <h3>2006-2007</h3>
+        <ul>
+          <li>Voorzitter: Nicolas Engelmann</li>
+          <li>Ondervoorzitter: Werner Vandenbruwaene</li>
+          <li>Secretaris: Dennis Gheldolf</li>
+          <li>Penningmeester: Joris De Bruyne</li>
+          <li>Politiek Secretaris: Erwan Bertrand</li>
+          <li>Politiek Secretaris: Nicolas Bas</li>
+          <li>Redacteur: Pieter Bailleul</li>
+          <li>Aedilis: Dries Verbraeken</li>
+          <li>Raadslid: Mathias Adriaenssens</li>
+          <li>Raadslid: Lief Bleyen</li>
+        </ul>
+
+        <h3>2007-2008</h3>
+        <ul>
+          <li>Voorzitter: Werner Vandenbruwaene</li>
+          <li>Ondervoorzitter Joris De Bruyne</li>
+          <li>Secretaris: Mathias Adriaenssens</li>
+          <li>Penningmeester: Dennis Gheldolf</li>
+          <li>Politiek Secretaris: Erwan Bertrand</li>
+          <li>Politiek Secretaris: Nicolas Bas</li>
+          <li>Webmaster: Denis Clijsters</li>
+          <li>Public Relations: Ruben Evens</li>
+          <li>Raadslid: Basile Aloy</li>
+          <li>Raadslid: Erwan Bertrand</li>
+          <li>Raadslid: Manu Claessens</li>
+          <li>Raadslid: Guillaume Engels</li>
+          <li>Raadslid: Lief Bleyen</li>
+          <li>Raadslid: Lode Cossaer</li>
+          <li>Raadslid: Jan Loosen</li>
+          <li>Raadslid: Thomas Verhulst</li>
+        </ul>
+
+        <h3>2008-2009</h3>
+        <ul>
+          <li>Voorzitter: Nicolas Engelmann</li>
+          <li>Ondervoorzitter Mathias Adriaenssens</li>
+          <li>Secretaris: Lode Cossaer</li>
+          <li>Penningmeester: Jan Loosen</li>
+          <li>Politiek Secretaris: Dennis Gheldolf</li>
+          <li>Politiek Secretaris: Denis Clijsters</li>
+          <li>Redacteur: Lode Cossaer</li>
+          <li>International Political Officer: Nicolas Bas</li>
+          <li>Public Relations: Ruben Evens</li>
+          <li>Public Relations: Joris De Bruyne</li>
+          <li>Activiteiten: Guillaume Engels</li>
+          <li>Activiteiten: Manu Claessens</li>
+          <li>Raadslid: Werner Vandenbruwaene</li>
+          <li>Raadslid: Xavier Meulders</li>
+          <li>Raadslid: Maarten Wegge</li>
+          <li>Raadslid : Niels Muilwijk</li>
+          <li>Raadslid: Erwan Bertrand</li>
+          <li>Raadslid: Basile Aloy</li>
+          <li>Raadslid: Thomas Verhulst</li>
+          <li>Raadslid: Jan-Felix Nédéé</li>
+          <li>Raadslid: Charlotte Vermeersch</li>
+          <li>Raadslid: Bavo De Mol</li>
+        </ul>
+
+        <h3>2009-2010</h3>
+        <ul>
+          <li>Voorzitter: Mathias Adriaenssens</li>
+          <li>Ondervoorzitter Denis Clijsters</li>
+          <li>Secretaris: Dennis Gheldolf</li>
+          <li>Penningmeester: Niels Muilwijk</li>
+          <li>Politiek Secretaris: Maarten Wegge</li>
+          <li>Politiek Comité: Lode Cossaer</li>
+          <li>Politiek Comité: Bavo De Mol</li>
+          <li>Redacteur: Xavier Meulders</li>
+          <li>Activiteiten: Jan-Felix Nédée</li>
+          <li>Activiteiten: Ruben Evens</li>
+          <li>Webmaster: Bavo De Mol</li>
+          <li>Leden: Charlotte Vermeersch</li>
+          <li>Raadslid: Nina Wegge</li>
+          <li>Raadslid: Jens Terrie</li>
+          <li>Raadslid: Bendert Hermans</li>
+        </ul>
+
+        <h3>2010-2011</h3>
+        <ul>
+          <li>Voorzitter: Bavo De Mol</li>
+          <li>Ondervoorzitter Dennis Gheldolf</li>
+          <li>Ondervoorzitter Charlotte Vermeersch</li>
+          <li>Secretaris: Jens Terrie</li>
+          <li>Penningmeester: Niels Muilwijk</li>
+          <li>Penningmeester: Jan-Felix Nédée</li>
+          <li>Politiek Secretaris: Xavier Meulders</li>
+          <li>Politiek Secretaris: Bendert Hermans</li>
+          <li>Redacteur: Mtghias Rysman</li>
+          <li>Activiteiten: Nina Wegge</li>
+          <li>Raadslid: Kelly Sabbe</li>
+          <li>Raadslid: Katinka Cools</li>
+          <li>Raadslid: Elias Boeykens</li>
+          <li>Raadslid: Thomas Laermans</li>
+          <li>Raadslid: Ilka Ringoot</li>
+        </ul>
+
+        <h3>2011-2012</h3>
+        <ul>
+          <li>Voorzitter: Bavo De Mol</li>
+          <li>Ondervoorzitter Jan-Felix Nédée</li>
+          <li>Secretaris: Katinka Cools</li>
+          <li>Penningmeester: Nina Wegge</li>
+          <li>Penningmeester: Jens Terrie</li>
+          <li>Politiek Secretaris: Elias Boeykens</li>
+          <li>Media: Kelly Sabbe</li>
+          <li>Leden: Ilka Ringoot</li>
+          <li>Activiteiten: Thomas Laermans</li>
+          <li>Raadslid: Nicolas Bas</li>
+          <li>Raadslid: Vincent Snoeck</li>
+          <li>Raadslid: Thais Verhoeven</li>
+          <li>Raadslid: Vincent Cogen</li>
+          <li>Raadslid: Seth Marijsse</li>
+          <li>Raadslid: Stef Van Beek</li>
+        </ul>
+
+        <h3>2012-2013</h3>
+        <ul>
+          <li>Voorzitter: Thomas Laermans</li>
+          <li>Ondervoorzitter Jens Terrie</li>
+          <li>Ondervoorzitter Elias Boeykens</li>
+          <li>Penningmeester: Stef Van Beek</li>
+          <li>Secretaris: Kelly Sabbe</li>
+          <li>Politiek Secretaris: Vincent Cogen</li>
+          <li>Politiek Secretaris: Ilka Ringoot</li>
+          <li>Leden: Thais Verhoeven</li>
+          <li>Lustrumverantwoordelijke: Bavo De Mol</li>
+          <li>Bestuurlid: Patrick Forlan</li>
+          <li>Bestuurslid: Jasper Janssens</li>
+        </ul>
+
+        <h3>2013-2014</h3>
+        <ul>
+          <li>Voorzitter: Thomas Laermans</li>
+          <li>Penningmeester: Stef Van Beek</li>
+          <li>Secretaris: Sabina Nasirova</li>
+          <li>Politiek Secretaris: Vincent Cogen</li>
+          <li>Politiek Secretaris: Jasper Janssens</li>
+          <li>Politiek Secretaris: Seth Marijsse</li>
+          <li>Acitiviteiten: Patrick Forlan</li>
+          <li>Leden: Krystian Timperman</li>
+          <li>Media: Areg Atoyan</li>
+          <li>Bestuurslid: Bavo De Mol</li>
+          <li>Bestuurslid: Laurenz Van Ginneken</li>
+        </ul>
+
+        <h3>2014-2015</h3>
+        <ul>
+          <li>Voorzitter: Areg Atoyan</li>
+          <li>Ondervoorzitter Seth Marijsse</li>
+          <li>Politiek Secretaris: Krystian Timperman</li>
+          <li>Politiek Secretaris: Laurenz Van Ginneken</li>
+          <li>Secretaris: BiMei Vandenberghe</li>
+          <li>Penningmeester: Cédric Missonier</li>
+        </ul>
+
+        <h3>2015-2016</h3>
+        <ul>
+          <li>Voorzitter: Krystian Timperman</li>
+          <li>Politiek Secretaris: Laurenz Van Ginneken</li>
+          <li>Politiek Secretaris: Benedict Vanlanduyt</li>
+          <li>Secretaris: Hendrik Borginon</li>
+          <li>Penningmeester: Jan Govaerts</li>
+          <li>Activiteiten: Edo Schoone</li>
+          <li>Leden: Lander Hannes</li>
+          <li>Media: Dries Van Thielen</li>
+          <li>Aspirant: Robin Janssens</li>
+        </ul>
+
+        <h3>2016-2017</h3>
+        <ul>
+          <li>Voorzitter: Laurenz Van Ginneken</li>
+          <li>Onderoorzitter: Krystian Timperman</li>
+          <li>Penningmeester: Pjotr Pauwels</li>
+          <li>Politiek Secretaris: Edo Schoone</li>
+          <li>Leden: Hendrik Borginon</li>
+          <li>Public Relations: Jan Govaerts</li>
+          <li>Activiteiten: Robin Janssens</li>
+          <li>Media + hoofdredacteur: Dries Van Thielen</li>
+          <li>Bestuurslid: Joeri Vandendriessche</li>
+          <li>Aspirant: Jeroen Van den Poel</li>
+          <li>Aspirant: Igor Zivkovic</li>
+        </ul>
+      </div>
+
+
+    </section>
+
+    {{>social}}
+
+    {{>scripts}}
+
+</body>
+
+</html>

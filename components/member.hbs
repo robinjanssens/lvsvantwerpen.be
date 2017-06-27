@@ -1,0 +1,39 @@
+{{#if inverted_color}}
+    <section class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <img src="{{image}}" alt="{{name}}" class="pasfoto">
+                </div>
+                <div class="col-lg-8 text-center">
+                    <h1 class="section-heading">{{name}}</h1>
+                    <hr class="light">
+                    <h2>{{function}}</h2>
+                    <h3><a href="mailto:{{email}}" class="light">{{email}}</a></h3>
+                    {{#if email2}}
+                    <h3><a href="mailto:{{email2}}" class="light">{{email2}}</a></h3>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </section>
+{{else}}
+    <section class="whitebackground">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <img src="{{image}}" alt="{{name}}" class="pasfoto">
+                </div>
+                <div class="col-lg-8 text-center">
+                    <h1 class="section-heading">{{name}}</h1>
+                    <hr class="primary">
+                    <h2>{{function}}</h2>
+                    <h3><a href="mailto:{{email}}">{{email}}</a></h3>
+                    {{#if email2}}
+                    <h3><a href="mailto:{{email2}}">{{email2}}</a></h3>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </section>
+{{/if}}
