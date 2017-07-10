@@ -1,6 +1,6 @@
 {
-	"project_name": "set name here",
-	"project_slug": "sn",
+	"project_name": "LVSV Antwerpen",
+	"project_slug": "lvsv-antwerpen",
 	"s3": {
 		"bucket": "enduro.sethere",
 		"region": "eu-west-1"

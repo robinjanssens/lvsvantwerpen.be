@@ -1,11 +1,11 @@
 {
-  "name": "enduro_scaffolding",
+  "name": "lvsv_antwerpen",
   "description": "",
   "main": "assets/vendor/enduro/index.js",
   "authors": [
-    "author goes here"
+    "Robin Janssens"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "",
   "ignore": [
     "**/.*",
