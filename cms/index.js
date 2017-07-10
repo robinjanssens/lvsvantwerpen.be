@@ -106,14 +106,5 @@
 	membership_title: 'Lid Worden?',
 	membership_text: 'Spreek een bestuurslid aan op één van onze activiteiten of stuur een mail naar ',
 	membership_email: 'leden@lvsvantwerpen.be',
-	membership_text2: '. Lidmaatschap kost 5 euro en kent verschillende voordelen zoals kortingen op activiteiten en drie gratis boekjes.',
-	contact_title: 'Vind ons!',
-    facbook_url: 'https://www.facebook.com/LVSV.Antwerpen/',
-    twitter_url: 'https://twitter.com/LVSVAntwerpen',
-    google_url: '',
-    instagram_url: 'https://www.instagram.com/lvsv.antwerpen/',
-    linkedin_url: 'https://www.linkedin.com/company/10833720',
-    youtube_url: '',
-    rss_url: '',
-    email: 'voorzitter@lvsvantwerpen.be'
+	membership_text2: '. Lidmaatschap kost 5 euro en kent verschillende voordelen zoals kortingen op activiteiten en drie gratis boekjes.'
 }
