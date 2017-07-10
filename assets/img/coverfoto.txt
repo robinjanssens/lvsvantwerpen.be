@@ -1,0 +1,2 @@
+Gaussian blur radius = 2px
+Brightness = -100/128
