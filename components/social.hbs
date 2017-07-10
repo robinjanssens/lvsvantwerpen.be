@@ -2,17 +2,17 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Vind ons!</h2>
+                <h2 class="section-heading">{{global.contact_title}}</h2>
                 <hr class="primary">
                 <ul class="soc">
-                    <li><a class="soc-facebook"             target="_blank" href="https://www.facebook.com/LVSV.Antwerpen/"></a></li>
-                    <li><a class="soc-twitter"              target="_blank" href="https://twitter.com/LVSVAntwerpen"></a></li>
-                    <!-- <li><a class="soc-google"               target="_blank" href="#"></a></li> -->
-                    <li><a class="soc-instagram"            target="_blank" href="https://www.instagram.com/lvsv.antwerpen/"></a></li>
-                    <li><a class="soc-linkedin"             target="_blank" href="https://www.linkedin.com/company/10833720"></a></li>
-                    <!-- <li><a class="soc-youtube"              target="_blank" href="#"></a></li> -->
-                    <!-- <li><a class="soc-rss"                  target="_blank" href="#"></a></li> -->
-                    <li><a class="soc-email2 soc-icon-last" target="_blank" href="mailto:voorzitter@lvsvantwerpen.be"></a></li>
+                    {{#if global.facbook_url}}<li><a class="soc-facebook" target="_blank" href="{{global.facebook_url}}"></a></li>{{/if}}
+                    {{#if global.twitter_url}}<li><a class="soc-twitter" target="_blank" href="{{global.twitter_url}}"></a></li>{{/if}}
+                    {{#if global.google_url}}<li><a class="soc-google" target="_blank" href="{{global.google_url}}"></a></li>{{/if}}
+                    {{#if global.instagram_url}}<li><a class="soc-instagram" target="_blank" href="{{global.instagram_url}}"></a></li>{{/if}}
+                    {{#if global.linkedin_url}}<li><a class="soc-linkedin" target="_blank" href="{{global.linkedin_url}}"></a></li>{{/if}}
+                    {{#if global.youtube_url}}<li><a class="soc-youtube" target="_blank" href="{{global.youtube_url}}"></a></li>{{/if}}
+                    {{#if global.rss_url}}<li><a class="soc-rss" target="_blank" href="{{global.rss_url}}"></a></li>{{/if}}
+                    {{#if global.email}}<li><a class="soc-email2 soc-icon-last" target="_blank" href="mailto:{{global.email}}"></a></li>{{/if}}
                 </ul>
             </div>
         </div>
