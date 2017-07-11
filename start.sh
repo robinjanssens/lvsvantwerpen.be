@@ -1,3 +1,3 @@
 #!/bin/sh
 
-enduro start
+enduro start -p 8080
