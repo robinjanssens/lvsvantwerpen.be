@@ -1,1 +1,3 @@
-#!/bin/shenduro start
+#!/bin/sh
+
+enduro start
