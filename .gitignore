@@ -2,3 +2,6 @@
 # user login
 cms/.users.js
 _generated
+
+# content
+cms/
